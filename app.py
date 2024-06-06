@@ -2,12 +2,10 @@ import streamlit as st
 import requests
 
 # URL de consulta de precios de Binance
-url = 'https://api.binance.com/api/v3/ticker/price'
+url = 'https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT'
 
 # Consulta de precio de Bitcoin
-symbol = 'BTCUSDT'
-params = {'symbol': symbol}
-response = requests.get(url, params=params)
+response = requests.get(url)
 data = response.json()
 price = data['price']
 
