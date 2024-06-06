@@ -12,7 +12,7 @@ print(data)
 
 # Interfaz de usuario con Streamlit
 st.title('Consulta de precio de Bitcoin en Binance')
-st.write('Precio actual:', price)
+st.write('Precio actual:', data)
 
 # # Consulta de precio por parte del usuario
 # symbol_user = st.text_input('Ingrese un símbolo de moneda (por ejemplo, ETHUSDT):')
