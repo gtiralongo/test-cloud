@@ -7,11 +7,13 @@ url = "https://api.binance.us/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=1"
 # Consulta de precio de Bitcoin
 response = requests.get(url)
 data = response.json()
-print(data)
+#print(data)
 # price = data['price']
 
 # Interfaz de usuario con Streamlit
 st.title('Consulta de precio de Bitcoin en Binance')
+print(data)
+st.write(response)
 st.write('Precio actual:', data)
 
 # # Consulta de precio por parte del usuario
